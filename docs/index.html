@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>センスイげーむ</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="titBox">
+            <i class="fab fa-waze"></i>
+            <h1 id="title">センスイげーむ</h1>
+            <i class="fab fa-waze"></i>
+        </div>
+        <div class="headerBtnBox ro" id="btn">
+            <h2 class="titTxt ro">もぐってみる</h2>
+            <i class="fas fa-vr-cardboard"></i>
+        </div>
+        <div class="alertBox">
+            <p class="aleart">ちゅうい</p>
+            <span>+</span>
+            <p class="detail hide">ごめんね<br>とくにないよ！</p>
+        </div>
+    </header>
+    <main class="hide">
+        <div id="secAir">
+            <p class="message">スクロールしてね!<br>いかりにきをつけて</p>
+            <div class="person">
+                <i class="fas fa-vr-cardboard"></i>
+                <i class="fas fa-male"></i>
+            </div>
+        </div>
+        <div id="secSea">
+            <div class="anchor"><i class="fas fa-anchor"></i></div>
+        </div>
+        <div class="pos" style="position:fixed;left:5px;bottom:10px;"></div>
+        <a href="#" class="breath ro">こきゅう</a>
+    </main>
+    <div class="gameOverWrap hide">
+        <p class="gameOver">げーむ<br class="brSp">オーバー</p>
+        <p class="reset">りせっと</p>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>

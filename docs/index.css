@@ -1,0 +1,231 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+
+body{
+    background: #00008b;
+    font-family: "Nico Moji";
+    text-align: center;
+}
+.brSp{
+    display: none;
+}
+    @media only screen and (max-width:767px){
+        body{
+            min-width:0;
+        }
+        .brSp{
+            display: inline;
+        }
+    }
+
+.ro:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+    z-index: 100;
+    padding-top: 270px;
+}
+header #title{
+    display: inline-block;
+    font-size: 70px;
+}
+header .fa-waze{
+    font-size: 55px;
+}
+header .headerBtnBox{
+    display: inline-block;
+    margin: 80px auto 0;
+    padding: 10px;
+    border: 5px solid #FFF;
+    border-radius: 12px;
+}
+header .titTxt{
+    display: inline-block;
+    font-size: 28px;
+}
+header .fa-vr-cardboard{
+    font-size: 20px;
+}
+header .alertBox{
+    width: 250px;
+    margin: 100px auto 0;
+    border: 2px solid #FFF;
+    font-size: 20px;
+    position: relative;
+    line-height: 1.5;
+    cursor: pointer;
+}
+header .alertBox span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+header .alertBox .detail{
+    border-top: 1px solid #FFF;
+    background-color: #808080;
+    padding: 10px 0;
+}
+
+    @media only screen and (max-width:767px){
+        header{
+            padding-top: 60%;
+        }
+        header #title{
+            font-size: 40px;
+        }
+        header .fa-waze{
+            font-size: 30px;
+        }
+        header .headerBtnBox{
+        margin: 12% auto 0;
+        padding: 10px;
+        }
+        header .titTxt{
+            font-size: 15px;
+        }
+        header .fa-vr-cardboard{
+            font-size: 12px;
+        }
+        header .alertBox{
+            margin: 30% auto 0;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        header .alertBox span{
+            top: 0;
+            right: 10px;
+        }
+        header .alertBox .detail{
+            padding: 5% 0;
+        }
+    }
+
+/* main */
+/* secAir */
+#secAir{
+    padding-top: 30px;
+    background: #FFF;
+    height: 475px;
+    z-index: 99;
+}
+#secAir .message{
+    font-size: 25px;
+    line-height: 1.5;
+}
+#secAir .person{
+    position: fixed;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 150px;
+}
+#secAir .person .fa-vr-cardboard{
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    top: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #00BFFF;
+}
+
+/* secSea */
+#secSea{
+    height: 3000px;
+    position: relative;
+}
+#secSea .anchor{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 200px;
+}
+
+.breath{
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #FFF;
+    font-size: 30px;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.gameOverWrap{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+    z-index: 100;
+    padding-top: 270px;
+}
+.gameOverWrap .gameOver{
+    font-size: 90px;
+}
+.gameOverWrap .reset{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 50px;
+    border: 2px solid #FFF;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+    @media only screen and (max-width:767px){
+        #secAir{
+            padding-top: 10%;
+            height: 440px;
+            z-index: 99;
+        }
+        #secAir .person{
+            position: fixed;
+            top: 420px;
+            font-size: 120px;
+        }
+
+        #secSea{
+            height: 2000px;
+            position: relative;
+        }
+        #secSea .anchor{
+            font-size: 190px;
+        }
+
+
+        .gameOverWrap{
+            padding-top: 50%;
+        }
+        .gameOverWrap .gameOver{
+            font-size: 60px;
+        }
+        .gameOverWrap .reset{
+            font-size: 18px;
+            margin-top: 20%;
+        }
+    }
